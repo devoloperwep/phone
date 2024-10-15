@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Do'stlarni taklif qilish.</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            TEL HOUSE
+        </div>
+        <div class="my_chanel">
+            <a href="#">instagram</a>
+            <a href="#">telegram</a>
+        </div>
+    </header>
+    <div class="create">
+        <h1 id="center">CARDS</h1>
+        <button>Add Card</button>
+        <div class="buttons hidden">
+            <button id="let">O'zgatirish</button>
+            <button id="plus">qo'shish</button>
+            <button id="minus">ayirish</button>
+        </div>
+        <form class="replese hidden">
+            <label for="replese">O'zgartirmoqchi bo'lgan summani kiriting.</label>
+            <br>    
+            <input id="replese" type="number">
+        </form>
+        <form class="hidden addCard">
+            <label for="name">Taklif qilgan odamni ismi</label>
+            <input type="text" id="name">
+            <label for="phone">qanday telefon oldi</label>
+            <input type="text" id="phone">
+            <label for="money">narxi qancha</label>
+            <input type="number" id="money">
+            <small id="error"></small>
+            <button type="submit">send</button>
+        </form>
+        <div class="overlay hidden"></div>
+    </div>
+    <div class="cards"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
